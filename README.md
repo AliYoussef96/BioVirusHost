@@ -93,33 +93,71 @@ Ageratum conyzoides symptomless alphasatellite [TAX:1705092]|Viruses; Alphasatel
 Search for virus hosts by virus TAX id.
 
 ```
-for i_result in v_tax_search([443876,438782]):
+from BioVirusHost import BioVirusHost
+
+for i_result in BioVirusHost.v_tax_search([443876,438782]):
     print (i_result)
 ```
 
-This will return generator object for Data frame(s) contains ( virus (species) name, virus lineage, hostname, and host lineage ).
+**output**
+
+Virus (species) name|Virus lineage|Host name|Host lineage
+|-------------------|-------------|---------|------------|
+African swine fever virus Benin 97/1 [TAX:443876]|Viruses; Asfarviridae; Asfivirus; African swine fever virus|Potamochoerus larvatus [TAX:273792]|Eukaryota; Metazoa; Chordata; Craniata; Sarcopterygii; Mammalia; Laurasiatheria; Suina; Suidae; Potamochoerus
+African swine fever virus Benin 97/1 [TAX:443876]|Viruses; Asfarviridae; Asfivirus; African swine fever virus|Phacochoerus aethiopicus [TAX:85517]|Eukaryota; Metazoa; Chordata; Craniata; Sarcopterygii; Mammalia; Laurasiatheria; Suina; Suidae; Phacochoerus
+African swine fever virus Benin 97/1 [TAX:443876]|Viruses; Asfarviridae; Asfivirus; African swine fever virus|Phacochoerus africanus [TAX:41426]|Eukaryota; Metazoa; Chordata; Craniata; Sarcopterygii; Mammalia; Laurasiatheria; Suina; Suidae; Phacochoerus
+African swine fever virus Benin 97/1 [TAX:443876]|Viruses; Asfarviridae; Asfivirus; African swine fever virus|Sus scrofa [TAX:9823]|Eukaryota; Metazoa; Chordata; Craniata; Sarcopterygii; Mammalia; Laurasiatheria; Suina; Suidae; Sus
+African swine fever virus Benin 97/1 [TAX:443876]|Viruses; Asfarviridae; Asfivirus; African swine fever virus|Ornithodoros [TAX:6937]|Eukaryota; Metazoa; Arthropoda; Chelicerata; Arachnida; Acari; Parasitiformes; Ixodida; Ixodoidea; Argasidae
+
+Virus (species) name|Virus lineage|Host name|Host lineage
+|-------------------|-------------|---------|------------|
+Abaca bunchy top virus [TAX:438782]|Viruses; Nanoviridae; Babuvirus|Musa acuminata AAA Group [TAX:214697]|Eukaryota; Viridiplantae; Streptophyta; Streptophytina; Liliopsida; Petrosaviidae; Zingiberales; Musaceae; Musa
+Abaca bunchy top virus [TAX:438782]|Viruses; Nanoviridae; Babuvirus|Musa sp. [TAX:46838]|Eukaryota; Viridiplantae; Streptophyta; Streptophytina; Liliopsida; Petrosaviidae; Zingiberales; Musaceae; Musa
+
 
 #### Example 4
 
 Search for virus hosts by host tax id.
 
 ```
-for i_result in h_tax_search([183220,3630]):
+from BioVirusHost import BioVirusHost
+
+for i_result in BioVirusHost.h_tax_search([183220,3630]):
     print (i_result)
 ```
 
-This will return a generator object for Data frame(s) contains ( virus (species) name, virus lineage, hostname, and host lineage ).
+**output**
+
+Virus (species) name|Virus lineage|Host name|Host lineage
+|-------------------|-------------|---------|------------|
+Ageratum conyzoides symptomless alphasatellite [TAX:1705092]|Viruses; Alphasatellitidae; Geminialphasatellitinae; unclassified Begomovirus-associated alphasatellites|Abelmoschus manihot subsp. tetraphyllus [TAX:1610811]|Eukaryota; Viridiplantae; Streptophyta; Streptophytina; Malvales; Malvaceae; Malvoideae; Abelmoschus; Abelmoschus manihot
+Ageratum conyzoides symptomless alphasatellite [TAX:1705092]|Viruses; Alphasatellitidae; Geminialphasatellitinae; unclassified Begomovirus-associated alphasatellites|Abelmoschus manihot [TAX:183220]|Eukaryota; Viridiplantae; Streptophyta; Streptophytina; Malvales; Malvaceae; Malvoideae; Abelmoschus
+
+Virus (species) name|Virus lineage|Host name|Host lineage
+|-------------------|-------------|---------|------------|
+Abutilon mosaic virus [TAX:10815]|Viruses; Geminiviridae; Begomovirus|Abutilon [TAX:3630]|Eukaryota; Viridiplantae; Streptophyta; Streptophytina; Malvales; Malvaceae; Malvoideae
+Abutilon mosaic Bolivia virus [TAX:932071]|Viruses; Geminiviridae; Begomovirus|Abutilon [TAX:3630]|Eukaryota; Viridiplantae; Streptophyta; Streptophytina; Malvales; Malvaceae; Malvoideae
+Abutilon golden mosaic Yucatan virus [TAX:1312723]|Viruses; Geminiviridae; Begomovirus; Abutilon golden mosaic virus|Abutilon permolle [TAX:1312722]|Eukaryota; Viridiplantae; Streptophyta; Streptophytina; Malvales; Malvaceae; Malvoideae; Abutilon
+Abutilon Brazil virus [TAX:665102]|Viruses; Geminiviridae; Begomovirus|Abutilon [TAX:3630]|Eukaryota; Viridiplantae; Streptophyta; Streptophytina; Malvales; Malvaceae; Malvoideae
+
 
 #### Example 5
 
 Advanced search for virus hosts using virus lineage and a specific host
 
 ```
-for i_result in comp_query("phasianinae","adenoviridae"):
+from BioVirusHost import BioVirusHost
+
+for i_result in BioVirusHost.comp_query("phasianinae","adenoviridae"):
     print (i_result)
 ```
 
-This will return a generator object for Data frame(s) contains ( virus (species) name, virus lineage, hostname, and host lineage ).
+**output**
+
+Virus (species) name|Virus lineage|Host name|Host lineage
+|-------------------|-------------|---------|------------|
+Avirulent turkey hemorrhagic enteritis virus [TAX:318490]|Viruses; Adenoviridae; Siadenovirus; Turkey siadenovirus A|Phasianinae [TAX:9072]|Eukaryota; Metazoa; Chordata; Craniata; Sarcopterygii; Aves; Neognathae; Galloanserae; Galliformes; Phasianidae
+
 
 #### Example 6
 
@@ -130,12 +168,39 @@ This will return:
 1- A data frame contains information about a virus (only) as genome type if host_info = False (default). 
 
 ```
-print (more_info("318490", "A.N.Other@example.com"))
+from BioVirusHost import BioVirusHost
+
+print (BioVirusHost.more_info("318490", "A.N.Other@example.com"))
 ```
 
 2- A generator object for Data frame(s) contains infromation about hosts (only), if host_info = T.
 
 ```
-for i_result in more_info("318490", "A.N.Other@example.com",True):
+from BioVirusHost import BioVirusHost
+
+for i_result in BioVirusHost.more_info("318490", "A.N.Other@example.com",True):
     print (i_result)
 ```
+**output**
+
+0|1
+|-------------------|-------------|
+Scientific Name|Phasianinae [TAX:9072]
+Lineage|Eukaryota; Metazoa; Chordata; Craniata; Sarcopterygii; Aves; Neognathae; Galloanserae; Galliformes; Phasianidae
+Evidence|Literature
+Reference|PMID: 19386786
+Authors|"Beach NM| Duncan RB| Larsen CT| Meng XJ| Sriranganathan N| Pierson FW"
+Title|Comparison of 12 turkey hemorrhagic enteritis virus isolates allows prediction of genetic factors affecting virulence.
+Journal|J Gen Virol. 2009 Aug;90(Pt 8):1978-85.
+|
+
+0|1
+|-------------------|----------
+Scientific Name|Meleagris gallopavo [TAX:9103]
+Lineage|Eukaryota; Metazoa; Chordata; Craniata; Sarcopterygii; Aves; Neognathae; Galloanserae; Galliformes; Phasianidae; Meleagridinae; Meleagris
+Evidence|Literature
+Reference|PMID: 19386786
+Authors|"Beach NM| Duncan RB| Larsen CT| Meng XJ| Sriranganathan N| Pierson FW"
+Title|Comparison of 12 turkey hemorrhagic enteritis virus isolates allows prediction of genetic factors affecting virulence.
+Journal|J Gen Virol. 2009 Aug;90(Pt 8):1978-85.
+DBLINKS|KEGG GENOME: T01523
