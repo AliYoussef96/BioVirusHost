@@ -1,4 +1,4 @@
-V\_HostDB module
+BioVirusHost module
 ================
 
 .. automodule:: BioVirusHost
