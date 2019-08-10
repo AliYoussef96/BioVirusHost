@@ -32,7 +32,7 @@ BioVirusHost is a simple Python interface to query information from Virus-Host d
 BioVirusHost was developed using Python 3.7, and it is available to be installed using pip:
 
 ```python
-pip install
+pip install BioVirusHost
 
 ```
 
