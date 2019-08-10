@@ -1,9 +1,9 @@
-.. V_hostDB documentation master file, created by
+.. BioVirusHost documentation master file, created by
    sphinx-quickstart on Fri Aug  9 12:02:14 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to V_hostDB's documentation!
+Welcome to BioVirusHost's documentation!
 ====================================
 
 .. toctree::
