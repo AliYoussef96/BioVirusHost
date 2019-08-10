@@ -176,7 +176,7 @@ print (BioVirusHost.more_info("318490", "A.N.Other@example.com"))
 
 2- A generator object for Data frame(s) contains infromation about hosts (only), if host_info = T.
 
-```
+```python
 from BioVirusHost import BioVirusHost
 
 for i_result in BioVirusHost.more_info("318490", "A.N.Other@example.com",True):
