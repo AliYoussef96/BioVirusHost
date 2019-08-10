@@ -21,7 +21,7 @@ Virus-Host DB does not provide API documentation or examples, hence BioVirusHost
 **Using pip**
 
 ```python
-pip install 
+pip install BioVirusHost
 ```
 
 **Note:** Python >=3.7 is required.
