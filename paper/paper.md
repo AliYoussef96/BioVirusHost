@@ -33,7 +33,6 @@ BioVirusHost was developed using Python 3.7, and it is available to be installed
 
 ```python
 pip install BioVirusHost
-
 ```
 
 BioVirusHost in its present version provides six functions each request different query from the Virus-Host DB, the final output of this function is a generator object. The generator object yield to data frames contains the information retrieved from the Virus-Host DB.
@@ -46,8 +45,8 @@ Search for virus hosts by virus scientific name.
 
 ```python
 from BioVirusHost import BioVirusHost
-
-for i_result in BioVirusHost.v_search(["Caprine parainfluenza virus 3","Human parainfluenza virus 1 strain Washington/1964","Human parainfluenza virus 4a"]):
+for i_result in BioVirusHost.v_search(["Caprine parainfluenza virus 3",
+    "Human parainfluenza virus 1 strain Washington/1964","Human parainfluenza virus 4a"]):
     print (i_result)
 ```
 
