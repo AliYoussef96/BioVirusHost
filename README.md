@@ -41,22 +41,52 @@ How to create a Pull Request? [documentation on pull requests](https://help.gith
 Search for virus hosts by virus scientific name.
 
 ```
-for i_result in v_search(["Caprine parainfluenza virus 3","Human parainfluenza virus 1 strain Washington/1964","Human parainfluenza virus 4a"]):
+from BioVirusHost import BioVirusHost
+
+for i_result in BioVirusHost.v_search(["Caprine parainfluenza virus 3","Human parainfluenza virus 1 strain Washington/1964","Human parainfluenza virus 4a"]):
     print (i_result)
 ```
 
-This will return generator object for Data frame(s) contains ( virus (species) name, virus lineage, hostname, and host lineage ).
+**output**
+
+Virus (species) name|Virus lineage|Host name|Host lineage
+|-------------------|-------------|---------|------------|
+Caprine parainfluenza virus 3 [TAX:1529392]|Viruses; Riboviria; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Respirovirus; Bovine respirovirus 3|Capra hircus [TAX:9925]|Eukaryota; Metazoa; Chordata; Craniata; Sarcopterygii; Mammalia; Laurasiatheria; Ruminantia; Pecora; Bovidae; Caprinae; Capra
+
+Virus (species) name|Virus lineage|Host name|Host lineage
+|-------------------|-------------|---------|------------|
+Human parainfluenza virus 1 strain Washington/1964 [TAX:188538]|Viruses; Riboviria; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Respirovirus; Human respirovirus 1|Homo sapiens [TAX:9606]|Eukaryota; Metazoa; Chordata; Craniata; Sarcopterygii; Mammalia; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Hominoidea; Hominidae; Homininae; Homo
+
+Virus (species) name|Virus lineage|Host name|Host lineage
+|-------------------|-------------|---------|------------|
+Human parainfluenza virus 4a [TAX:11224]|Viruses; Riboviria; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Rubulavirus; Human rubulavirus 4|Homo sapiens [TAX:9606]|Eukaryota; Metazoa; Chordata; Craniata; Sarcopterygii; Mammalia; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Hominoidea; Hominidae; Homininae; Homo
+
 
 #### Example 2
 
 Search for virus hosts by host scientific name.
 
 ```
-for i_result in h_search(["Abutilon","Abelmoschus manihot"]):
+from BioVirusHost import BioVirusHost
+
+for i_result in BioVirusHost.h_search(["Abutilon","Abelmoschus manihot"]):
     print (i_result)
 ```
 
-This will return a generator object for Data frame(s) contains ( virus (species) name, virus lineage, hostname, and host lineage ).
+**output**
+
+Virus (species) name|Virus lineage|Host name|Host lineage
+|-------------------|-------------|---------|------------|
+Abutilon mosaic virus [TAX:10815]|Viruses; Geminiviridae; Begomovirus|Abutilon [TAX:3630]|Eukaryota; Viridiplantae; Streptophyta; Streptophytina; Malvales; Malvaceae; Malvoideae
+Abutilon mosaic Bolivia virus [TAX:932071]|Viruses; Geminiviridae; Begomovirus|Abutilon [TAX:3630]|Eukaryota; Viridiplantae; Streptophyta; Streptophytina; Malvales; Malvaceae; Malvoideae
+Abutilon golden mosaic Yucatan virus [TAX:1312723]|Viruses; Geminiviridae; Begomovirus; Abutilon golden mosaic virus|Abutilon permolle [TAX:1312722]|Eukaryota; Viridiplantae; Streptophyta; Streptophytina; Malvales; Malvaceae; Malvoideae; Abutilon
+Abutilon Brazil virus [TAX:665102]|Viruses; Geminiviridae; Begomovirus|Abutilon [TAX:3630]|Eukaryota; Viridiplantae; Streptophyta; Streptophytina; Malvales; Malvaceae; Malvoideae
+
+Virus (species) name|Virus lineage|Host name|Host lineage
+|-------------------|-------------|---------|------------|
+Ageratum conyzoides symptomless alphasatellite [TAX:1705092]|Viruses; Alphasatellitidae; Geminialphasatellitinae; unclassified Begomovirus-associated alphasatellites|Abelmoschus manihot subsp. tetraphyllus [TAX:1610811]|Eukaryota; Viridiplantae; Streptophyta; Streptophytina; Malvales; Malvaceae; Malvoideae; Abelmoschus; Abelmoschus manihot
+Ageratum conyzoides symptomless alphasatellite [TAX:1705092]|Viruses; Alphasatellitidae; Geminialphasatellitinae; unclassified Begomovirus-associated alphasatellites|Abelmoschus manihot [TAX:183220]|Eukaryota; Viridiplantae; Streptophyta; Streptophytina; Malvales; Malvaceae; Malvoideae; Abelmoschus
+
 
 #### Example 3
 
