@@ -3,3 +3,4 @@ Dependencies
 
 - pandas
 - Biopython
+- urllib
