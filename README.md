@@ -192,7 +192,7 @@ Reference|PMID: 19386786
 Authors|"Beach NM| Duncan RB| Larsen CT| Meng XJ| Sriranganathan N| Pierson FW"
 Title|Comparison of 12 turkey hemorrhagic enteritis virus isolates allows prediction of genetic factors affecting virulence.
 Journal|J Gen Virol. 2009 Aug;90(Pt 8):1978-85.
-|
+
 
 0|1
 |-------------------|----------
