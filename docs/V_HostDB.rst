@@ -1,7 +1,7 @@
 V\_HostDB module
 ================
 
-.. automodule:: V_HostDB
+.. automodule:: BioVirusHost
     :members:
     :undoc-members:
     :show-inheritance:
