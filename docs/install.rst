@@ -3,4 +3,4 @@ Installation
 
 Using pip::
 
-	pip install
+	pip install BioVirusHost
