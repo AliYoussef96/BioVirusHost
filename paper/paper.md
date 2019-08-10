@@ -4,6 +4,9 @@ tags:
   - Virus-Host DB
   - Virus
   - python
+  - virus-host interactions
+  - database api
+  - taxonomy
 authors:
  - name: Ali Mostafa Anwar
    orcid: 0000-0002-5201-387X
