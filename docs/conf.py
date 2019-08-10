@@ -26,7 +26,7 @@ author = 'Ali Mostafa'
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
-release = '0.0.1'
+release = '1.0.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -44,7 +44,6 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
-    'rinoh.frontend.sphinx',
     'sphinx.ext.napoleon',
     'sphinx_rtd_theme'
 ]
