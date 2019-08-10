@@ -1,6 +1,7 @@
 import pandas as pd
 from pandas import DataFrame
 from Bio import Entrez
+import urllib
 
 # must install BeautifulSoup4 for pandas.read.html
 
