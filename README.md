@@ -20,7 +20,7 @@ Virus-Host DB does not provide API documentation or examples, hence BioVirusHost
 
 **Using pip**
 
-```
+```python
 pip install 
 ```
 
@@ -41,7 +41,7 @@ How to create a Pull Request? [documentation on pull requests](https://help.gith
 
 Search for virus hosts by virus scientific name.
 
-```
+```python
 from BioVirusHost import BioVirusHost
 
 for i_result in BioVirusHost.v_search(["Caprine parainfluenza virus 3","Human parainfluenza virus 1 strain Washington/1964","Human parainfluenza virus 4a"]):
@@ -67,7 +67,7 @@ Human parainfluenza virus 4a [TAX:11224]|Viruses; Riboviria; Negarnaviricota; Ha
 
 Search for virus hosts by host scientific name.
 
-```
+```python
 from BioVirusHost import BioVirusHost
 
 for i_result in BioVirusHost.h_search(["Abutilon","Abelmoschus manihot"]):
@@ -93,7 +93,7 @@ Ageratum conyzoides symptomless alphasatellite [TAX:1705092]|Viruses; Alphasatel
 
 Search for virus hosts by virus TAX id.
 
-```
+```python
 from BioVirusHost import BioVirusHost
 
 for i_result in BioVirusHost.v_tax_search([443876,438782]):
@@ -120,7 +120,7 @@ Abaca bunchy top virus [TAX:438782]|Viruses; Nanoviridae; Babuvirus|Musa sp. [TA
 
 Search for virus hosts by host tax id.
 
-```
+```python
 from BioVirusHost import BioVirusHost
 
 for i_result in BioVirusHost.h_tax_search([183220,3630]):
@@ -146,7 +146,7 @@ Abutilon Brazil virus [TAX:665102]|Viruses; Geminiviridae; Begomovirus|Abutilon 
 
 Advanced search for virus hosts using virus lineage and a specific host
 
-```
+```python
 from BioVirusHost import BioVirusHost
 
 for i_result in BioVirusHost.comp_query("phasianinae","adenoviridae"):
@@ -168,7 +168,7 @@ This will return:
 
 1- A data frame contains information about a virus (only) as genome type if host_info = False (default). 
 
-```
+```python
 from BioVirusHost import BioVirusHost
 
 print (BioVirusHost.more_info("318490", "A.N.Other@example.com"))
