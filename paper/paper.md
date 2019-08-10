@@ -54,6 +54,8 @@ for i_result in BioVirusHost.v_search(["Caprine parainfluenza virus 3","Human pa
 
 ### output
 
+The output from the previous example is.
+
 Virus (species) name|Virus lineage|Host name|Host lineage
 |-------------------|-------------|---------|------------|
 Caprine parainfluenza virus 3 [TAX:1529392]|Viruses; Riboviria; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Orthoparamyxovirinae; Respirovirus; Bovine respirovirus 3|Capra hircus [TAX:9925]|Eukaryota; Metazoa; Chordata; Craniata; Sarcopterygii; Mammalia; Laurasiatheria; Ruminantia; Pecora; Bovidae; Caprinae; Capra
@@ -65,3 +67,5 @@ Human parainfluenza virus 1 strain Washington/1964 [TAX:188538]|Viruses; Ribovir
 Virus (species) name|Virus lineage|Host name|Host lineage
 |-------------------|-------------|---------|------------|
 Human parainfluenza virus 4a [TAX:11224]|Viruses; Riboviria; Negarnaviricota; Haploviricotina; Monjiviricetes; Mononegavirales; Paramyxoviridae; Rubulavirus; Human rubulavirus 4|Homo sapiens [TAX:9606]|Eukaryota; Metazoa; Chordata; Craniata; Sarcopterygii; Mammalia; Euarchontoglires; Primates; Haplorrhini; Simiiformes; Catarrhini; Hominoidea; Hominidae; Homininae; Homo
+
+For more examples see [README](https://github.com/AliYoussef96/BioVirusHost/blob/master/README.md)
