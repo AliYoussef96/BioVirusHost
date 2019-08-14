@@ -208,3 +208,7 @@ Authors|"Beach NM| Duncan RB| Larsen CT| Meng XJ| Sriranganathan N| Pierson FW"
 Title|Comparison of 12 turkey hemorrhagic enteritis virus isolates allows prediction of genetic factors affecting virulence.
 Journal|J Gen Virol. 2009 Aug;90(Pt 8):1978-85.
 DBLINKS|KEGG GENOME: T01523
+
+# Citation
+
+Ali Mostafa Anwar. (2019, August 14). BioVirusHost: A simple Python interface to query the information from Virus-Host DB (Version v1.0.1). Zenodo. http://doi.org/10.5281/zenodo.3368326
