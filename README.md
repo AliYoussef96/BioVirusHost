@@ -174,7 +174,8 @@ This will return:
 ```python
 from BioVirusHost import BioVirusHost
 
-print (BioVirusHost.more_info("318490", "A.N.Other@example.com"))
+for i_result in BioVirusHost.more_info("318490", "A.N.Other@example.com",False):
+    print (i_result)
 ```
 
 2- A generator object for Data frame(s) contains infromation about hosts (only), if host_info = T.
