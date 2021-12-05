@@ -412,10 +412,11 @@ def more_info(v_query, email, host_info= False):
 
     tables = pd.read_html(api_request)
 
-    if host_info == False:
-       return tables[3] #the virus dataframe
 
-    if host_info == True:
+    if host_info == False:
+       yield tables[3] #the virus dataframe
+
+    elif host_info == True:
         for i in range(len(tables))[4:]:
             yield tables[i]
         
